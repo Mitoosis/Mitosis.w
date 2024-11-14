@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Bebas Neue", sans-serif;
+    src: url(Fonts/BebasNeue-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
