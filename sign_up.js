@@ -27,8 +27,8 @@ btnno.addEventListener('click', function reproducir() {
     audio.play();
     veil.style.zIndex="-1";
     silencio = true;
-    // window.close();
     window.open('nonono.html');
+    // window.close();
 
 })
 
