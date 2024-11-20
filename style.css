@@ -252,9 +252,10 @@ body{
 
 .instruction{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 2%;
+    margin: 1% 0;
 }
 
 
