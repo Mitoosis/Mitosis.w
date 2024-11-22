@@ -20,7 +20,7 @@
 body{
     height: 200vh;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -176,22 +176,11 @@ body{
     padding: 0 2%;
     background-color: #e1e1e1;
     
-
 }
 
-.logo{
+.home__logo{
     width: 43%;
 }
-/* .text{
-    font-family: 'Montserrat-semibold';
-    font-style: bold;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 22.3%;
-    font-size: 0.58em;
-    letter-spacing: 2.9px;
-    line-height: 4em; 
-} */
 
 .one , .two{
     width: 50%;
@@ -207,23 +196,6 @@ body{
     gap: 50px;
 }
 
-.one__text-1 , .one__text-2 {
-    width: 50%;
-    line-height: 1em;
-    font-family: 'Bebas N';
-}
-
-.one__separation{
-    height: 4px;
-    width: 90%;
-    background-color: #9cda17;
-    border: none;
-    border-radius: 10px;
-
-    transform: translateX(-15%);
-}
-
-
 /*--------------------------Instructions--------------------------*/
 
 .info{
@@ -232,10 +204,6 @@ body{
     background-color: #000000;
 
     color: #e1e1e1;
-   
-    border-top: #9cda17 solid 3px;
-    border-bottom: #9cda17 solid 3px;
-
     padding: 3% 6%;
     gap: 10%;
 }
@@ -258,86 +226,9 @@ body{
     margin: 1% 0;
 }
 
-
 .intruction__number{
     font-family:'Bebas N';
     font-size: 7.8em;
 }
 
-
 /*--------------------------PRODUCTS--------------------------*/
-
-.product{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.product:nth-child(1){
-
-    background-image: url(Images/Image-1.png);
-    width: 100vw;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.product:nth-child(2){
-    background-image: url(Images/Image-2.png);
-    width: 100vw;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.product:nth-child(3){
-    background-image: url(Images/Image-3.png);
-    width: 100vw;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.product__title{
-    font-family: 'Bebas N';
-    font-size: 4.5em;
-    color: #FFFFFF;
-}
-
-.ritual{
-    height: 100vh;
-    width: 100vw;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Bebas N';
-}
-
-.ritual__title{
-    background-color: #FFFFFF;
-    color: #000000;
-    width: 100%;
-    text-align: center;
-    font-size: 8em;
-    line-height: 0.9em;
-    padding: 1%;
-
-}
-
-
-@media screen and (max-width:1440px) {
-
-    .text{
-        font-family: 'Montserrat-semibold';
-        font-style: bold;
-        text-transform: uppercase;
-        position: absolute;
-        bottom: 22.3%;
-        font-size: 0.58em;
-        letter-spacing: 2.9px;
-        line-height: 4em; 
-    }
-    
-}
-
-
