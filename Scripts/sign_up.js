@@ -28,6 +28,7 @@ btnsi.addEventListener('click', function reproducir() {
         
     }else{
         audio.muted = false;
+        veil.style.zIndex="-1";
         audio.play();
         document.body.style.overflow = 'auto';
 
