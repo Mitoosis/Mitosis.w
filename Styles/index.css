@@ -1,14 +1,10 @@
 @font-face {
     font-family: 'Bebas N';
-    src: url('Fonts/Bebas_Neue/BebasNeue-Regular.ttf')format("woff");
+    src: url('../Fonts/Bebas_Neue/BebasNeue-Regular.ttf')format("woff");
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('Fonts/Montserrat/Montserrat-Regular.woff2')format("woff");
-}
-@font-face {
-    font-family: 'Montserrat-semibold';
-    src: url('Fonts/transfonter.org-20241116-021949/Montserrat-Medium.woff2')format("woff");
+    src: url('../Fonts/Montserrat/Montserrat-Regular.woff2')format("woff");
 }
 
 *{
@@ -20,7 +16,7 @@
 body{
     height: 200vh;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -39,7 +35,7 @@ body{
 .veil::before{
 
     content: "";
-    background-color: #191919;
+    background-color: #0c0c0c;
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -109,18 +105,6 @@ body{
         background-color: #9cda17;
     }
 }
-
-.banner__texto{
-    position: absolute;
-    bottom: 10px;
-    background-color: #ffffff70;
-    padding: 0 10px;
-    font-weight: 500;
-    border-radius: 2px;
-    
-}
-
-
 
 .welcome__video{
     position: absolute;
@@ -231,4 +215,35 @@ body{
     font-size: 7.8em;
 }
 
-/*--------------------------PRODUCTS--------------------------*/
+.continue{
+    
+    background-color: #DAFE41;
+    color: #101010;
+
+    text-decoration: none;
+    font-family: 'Bebas N';
+    font-size: 2em;
+    
+    height: 45px;
+    width:15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 80vw;
+    top: 190vh;
+
+    &:hover{
+        background-color: #BBE225;
+    }
+    &::before{
+        content: '<<';
+    }
+    &::after{
+        content: '>>';
+    }
+
+    
+}
