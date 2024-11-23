@@ -16,6 +16,9 @@
 *::-webkit-scrollbar {
     display: none; /* Oculta la barra de desplazamiento */
 }
+body{
+    background-color: #000000;
+}
 
 
 .form{

@@ -1,6 +1,10 @@
-@font-face{
-    font-family: "Bebas Neue", sans-serif;
-    src: url('Fonts/BebasNeue-Regular.ttf');
+@font-face {
+    font-family: 'Bebas N';
+    src: url('../Fonts/Bebas_Neue/BebasNeue-Regular.ttf')format("woff");
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../Fonts/Montserrat/Montserrat-Regular.woff2')format("woff");
 }
 
 
@@ -8,10 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
     font-family: "Bebas Neue", sans-serif;
-
 }
 
 body{
