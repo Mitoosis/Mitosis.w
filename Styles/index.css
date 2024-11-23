@@ -235,7 +235,7 @@ body{
 }
 
 
-@media  screen and (min-width:225px) and (max-width:400px) {
+@media  screen and (min-width:225px) and (max-width:762px) {
 
     .banner{
         height: 70%;
