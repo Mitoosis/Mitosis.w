@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Google Apps Scripts</title>
+</head>
+<body>
+
+    <form class="form" action="https://script.google.com/macros/s/AKfycbwA3zoxROJfHUon7-yfPmUSlikvnktUGgo_GShNlZ8y4ZQyY3uC3EiPY1wiC4cY6DDkdg/exec" method="post">
+
+        <div class="name-box">
+            <label class="name-box__label" for="name-box__name">Nombre:</label>
+            <input id="name-box__name" name="nombre" type="text" required>
+        </div>
+        <div class="phone-box">
+            <label class="phone-box__label" for="phone-box__phone">Número:</label>
+            <input id="phone-box__phone" name="numero" type="text" required>
+        </div>
+        <div class="city-box">
+            <label class="city-box__label" for="city-box__city">Ciudad:</label>
+            <input id="city-box__city" name="ciudad" type="text" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

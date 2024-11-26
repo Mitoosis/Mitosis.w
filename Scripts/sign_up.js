@@ -45,19 +45,17 @@ btnno.addEventListener('click', function reproducir() {
         veil.style.zIndex="-1";
         console.log('Video eliminado correctamente.');
         document.body.style.overflow = 'auto';
-        window.open('nonono.html');
+        window.open('../Pages/close.html');
         
     }else{
         audio.muted = true;
         audio.play();
         veil.style.zIndex="-1";
         silencio = true;
-        window.open('nonono.html');
+        window.open('../Pages/close.html');
         document.body.style.overflow = 'auto';
 
     }
-    
-    // window.close();
 
 })
 
