@@ -17,27 +17,136 @@
     display: none; /* Oculta la barra de desplazamiento */
 }
 body{
-    background-color: #000000;
+    font-family: 'Bebas N';
 }
 
+body::before{
+    content: "";
+    position: absolute;
+    height: 110vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(../Images/LOGO\ REDUCIDO\ NEGRO.svg);
+    background-repeat: repeat;
+    background-size: 0.8%;
+    filter: opacity(0.1);
+}
 
-.form{
-    background-color: #000000;
+.forms{
     height: 100vh;
     width: 100vw;
+}
+
+.form{
+
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2% 2% 8% 2%;
+    gap: 0px;
 }
 
-iframe{
-    border: none; 
-    overflow: hidden; 
-    width: 100vw; 
-    height: 100vh;
+.info__title{
+    font-size: 2.4em;
+    line-height: 0.7em;
+}
+.info__text{
+    font-family: 'Montserrat';
+    font-size: 1em;
+}
+.name-box ,.phone-box , .city-box{
+    display: flex;
+    flex-direction: column;
+}
+.name-box__label, .phone-box__label , .city-box__label{
+    font-size: 4em;
 }
 
-.m7w29c{
-    background-color: aqua;
+#name-box__name, #phone-box__phone, #city-box__city{
+    background-color: #000000;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    height: 50px;
+    padding: 0 2%;
+    color: #ffffff;
+
+    border: none;
 }
+
+#name-box__name{
+    display: inline-block;
+}
+.phone-box__note{
+    display: inline;
+}
+
+.form__button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    margin: auto;
+    font-family: 'Bebas N';
+    font-size: 4em;
+    width: 15%;
+    line-height: auto;
+    background: transparent;
+    border: none;
+    &:hover{
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+    }
+}
+
+
+@media  screen and (min-width:225px) and (max-width:762px) {
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    body::before{
+        background-size: 3%;
+    }
+    .form{
+        padding: 10% 5% 40% 5%;
+    }
+
+    .name-box__label, .phone-box__label , .city-box__label{
+        font-size: 2em;
+    }
+
+    #name-box__name, #phone-box__phone, #city-box__city{
+
+        font-size: 1em;
+        height: 50px;
+        padding: 0 2%;
+
+    }
+
+    .form__button{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        font-size: 2.5em;
+        width: 130px;
+
+
+        &:active{
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+

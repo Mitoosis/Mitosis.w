@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitoosis</title>
+
     <link rel="stylesheet" href="../Styles/forms.css">
+    <title>Formulario con Google Apps Scripts</title>
 </head>
 <body>
 
-    <section class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeH334GzfkojzSzS8aAoQ4W2km5YbNIqGW94JReRADJVaFdrw/viewform?embedded=true"> </iframe>
-    </section>
+    <div class="forms">
 
-    
+        <form class="form" action="https://script.google.com/macros/s/AKfycbyyj4I5-oOwMx_jlBdVHsHw5uH9fR5NRT_Kgqo3Ylk8_O17A3TId_U6_Z6b-YGgi9DlGg/exec" method="post">
 
+            <div class="info">
+                <h1 class="info__title">Inicia Aquí</h1>
+                <p class="info__text">Breve y Discreto</p>
+            </div>
 
-    
+            <div class="name-box">
+                <label class="name-box__label" for="name-box__name">Cómo te llamamos?:</label>
+                <input id="name-box__name" name="nombre" type="text" placeholder="??????????" required>
+            </div>
+            <div class="phone-box">
+                <label class="phone-box__label" for="phone-box__phone">Número:</label>
+                <p class="phone-box__note">No respondemos solicitudes si el número no está registrado.</p>
+                <input id="phone-box__phone" name="numero" type="number" placeholder="??????????" required>
+            </div>
+            <div class="city-box">
+                <label class="city-box__label" for="city-box__city">Desde que lugar nos acompañas en esta travesía?</label>
+                <select id="city-box__city" name="select">
+                    <option>Bogotá</option>
+                    <option>Chía</option>
+                    <option>Cájica</option>
+                    <option>Zipaquirá</option>
+                  </select>
+            </div>
+            <button class="form__button" type="submit">Invocar</button>
+    </form>
+    </div>
+
 </body>
 </html>
