@@ -23,7 +23,7 @@ body{
 body::before{
     content: "";
     position: absolute;
-    height: 110vh;
+    height: 100hv;
     top: 0;
     right: 0;
     left: 0;
@@ -41,16 +41,16 @@ body::before{
 }
 
 .form{
-
-    width: 100vw;
-    height: 100vh;
+    height: 85vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:center;
     align-items: stretch;
-    padding: 2% 2% 8% 2%;
-    gap: 0px;
+    gap: 5%;
+
+    padding: 2%;
+    
 }
 
 .info__title{
@@ -80,6 +80,12 @@ body::before{
     border: none;
 }
 
+
+#phone-box__phone::-webkit-inner-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
 #name-box__name{
     display: inline-block;
 }
@@ -91,7 +97,7 @@ body::before{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 2%;
+    bottom: 10%;
     margin: auto;
     font-family: 'Bebas N';
     font-size: 4em;
@@ -108,19 +114,22 @@ body::before{
 
 @media  screen and (min-width:225px) and (max-width:762px) {
     
-    body{
-        height: 100vh;
-        width: 100vw;
-    }
     body::before{
         background-size: 3%;
     }
     .form{
-        padding: 10% 5% 40% 5%;
+        height: 85vh;
+        justify-content: center;
+        gap: 5%;
+
     }
+
+
 
     .name-box__label, .phone-box__label , .city-box__label{
         font-size: 2em;
+       
+
     }
 
     #name-box__name, #phone-box__phone, #city-box__city{
@@ -131,14 +140,15 @@ body::before{
 
     }
 
+   
+
     .form__button{
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 10%;
+        bottom:10%;
         font-size: 2.5em;
         width: 130px;
-
 
         &:active{
             background-color: rgb(0, 0, 0);
