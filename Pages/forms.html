@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../Styles/forms.css">
     <title>Formulario con Google Apps Scripts</title>
+    <script defer src="../Scripts/form.js"></script>
 </head>
 <body>
 
     <div class="forms">
-
-        <form class="form" action="https://script.google.com/macros/s/AKfycbyyj4I5-oOwMx_jlBdVHsHw5uH9fR5NRT_Kgqo3Ylk8_O17A3TId_U6_Z6b-YGgi9DlGg/exec" method="post">
-
+        <form id="miFormulario" class="form">
             <div class="info">
                 <h1 class="info__title">Inicia Aquí</h1>
                 <p class="info__text">Breve y Discreto</p>
@@ -29,16 +27,15 @@
             </div>
             <div class="city-box">
                 <label class="city-box__label" for="city-box__city">Desde que lugar nos acompañas en esta travesía?</label>
-                <select id="city-box__city" name="select">
-                    <option>Bogotá</option>
-                    <option>Chía</option>
-                    <option>Cájica</option>
-                    <option>Zipaquirá</option>
-                  </select>
+                <select id="city-box__city" name="select" required>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Chía">Chía</option>
+                    <option value="Cajicá">Cajicá</option>
+                    <option value="Zipaquirá">Zipaquirá</option>
+                </select>
             </div>
             <button class="form__button" type="submit">Invocar</button>
-    </form>
+        </form>
     </div>
-
 </body>
 </html>

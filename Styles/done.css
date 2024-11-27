@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Bebas N';
+    src: url('../Fonts/Bebas_Neue/BebasNeue-Regular.ttf')format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.confirm{
+    font-family: 'Bebas N';
+    font-size: 2em;
+}
+
+@media  screen and (min-width:225px) and (max-width:762px) {
+    body{
+        padding: 2%;
+    }
+
+    .confirm{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
