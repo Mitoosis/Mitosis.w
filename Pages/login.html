@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="../Styles/login.css">
+    <script defer src="../Scripts/imagesLogin.js"></script>
+    
+</head>
+<body>
+
+    <div class="veil"></div>
+
+    <!-- esta parte se puede obtimizar usando JS para crear las etiquetas y un fragmento, asi no se necesita crear tanta etiqueta de manera manual -->
+    <div class="gallery">
+        <span class="column-gallery column-odd">
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+        </span>
+        <span class="column-gallery column-pair">
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+        </span>
+        <span class="column-gallery column-odd">
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+        </span>
+        <span class="column-gallery column-pair">
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+        </span>
+        <span class="column-gallery column-odd">
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+        </span>
+        <span class="column-gallery column-pair">
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+            <img class="column-gallery__image" src="" alt="" >
+        </span>
+    </div>
+
+    <div class="home">
+        <!-- <img class="home__logo" src="../Images/LOGO REDUCIDO BLANCO.svg" alt="" > -->
+        <form id="form" class="info" autocomplete="off"  onsubmit="event.preventDefault(); validarNickname();">
+            <img class="info__tittle" src="../Images/LOGO BLANCO.svg"></img>
+            <p class="info__phrase">Rituales de calle || Esencia orgánica </p>
+            <input class="info__input" type="text" id="nickname" name="nickname" placeholder="META EL CHIMBO AQUÍ" required>
+            <button class="info__button" type="submit">Ingresar</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p class="footer__copyright">©2024 MITOSIS Bogotá. All Rights Reserved. Terms of Use.</p>
+        <ul class="contact">
+            <a href="" class="contact__socialNetwork">About</a>
+            <a href="" class="contact__socialNetwork">Contact</a>
+            <a href="" class="contact__socialNetwork">Terms</a>
+        </ul>
+    </div>
+
+    <script src="../Scripts/validacion.js"></script>
+</body>
+</html>

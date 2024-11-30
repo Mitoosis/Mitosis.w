@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Nickname</title>
+    <script>
+        async function validarNickname() {
+            const nickname = document.getElementById("nickname").value;
+            const response = await fetch(`https://script.google.com/macros/s/AKfycbyvbHd_KnhISkqJVD84QJog_anraIl7GdBN61NdMO3D9VitjTGaF0QO5sMNRHgfoZB9Ew/exec?nickname=${nickname}`);
+            const result = await response.json();
+
+            if (result.exists) {
+                window.location.href = "../Pages/done.html";
+                // Redirigir o continuar con el flujo
+            } else {
+                alert("El nickname no existe. Inténtalo de nuevo.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <form onsubmit="event.preventDefault(); validarNickname();">
+
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" required>
+        <button type="submit">Ingresar</button>
+    </form>
+</body>
+</html>

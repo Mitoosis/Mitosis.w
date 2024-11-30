@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Bebas N';
+    src: url('../Fonts/Bebas_Neue/BebasNeue-Regular.ttf')format("woff");
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../Fonts/Montserrat/Montserrat-Regular.woff2')format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+
+
+    font-family: "Montserrat";
+}
+
+
+
+body{
+    overflow: hidden;
+}
+/*----------------------------------VEIL----------------------------------*/
+
+.veil{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 10; 
+
+    animation: opacity 15s infinite ease-out;
+}
+/*----------------------------------GALLERY------------------------------------*/
+
+.gallery{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    position: absolute;
+}
+
+.column-gallery{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.column-gallery__image{
+
+    border-radius: 20px;
+    margin: 25px 0 25px 0;
+}
+
+.column-odd{
+    animation: odd-columns  15s infinite 10ms  ease-in-out;
+    position: relative;
+}
+.column-pair{
+    animation: pair-columns  15s infinite 10ms ease-in-out;
+    position: relative;
+}
+
+/*----------------------------------ANIMATIONS-GALLERY----------------------------------*/
+@keyframes opacity {
+
+    0%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes odd-columns {
+
+    0%{ 
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+    
+@keyframes pair-columns {
+
+    0%{ 
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
+}
+
+/*-------------------------------------HOME-----------------------------*/
+
+.home{
+   
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    height: 100%;
+    
+
+}
+
+.home__logo{
+    height: 64px;
+}
+.info{
+    display: flex;
+    flex-direction: column;align-items: center;
+    gap: 20px;
+}
+
+.info__tittle{
+    /* font-size: 7em;
+    font-family: 'Bebas N';
+    line-height: 0.7em; */
+    width: 25%;
+}
+.info__phrase{
+    font-family: 'Bebas N';
+    font-size: 1.5em;
+
+}
+
+.info__input{
+
+
+    border: none;
+    height: 25px;
+    width: 25%;
+    text-align: center;
+    color: #000000;
+    font-size: 1em;
+    
+}
+
+.info__button{
+    font-family: 'Bebas N';
+    height: 40px;
+    width: 130px;
+
+    background-color: #DAFE41;
+    border: none;
+    border-radius: 12px;
+
+    color:#000000;
+    font-weight: 500;
+    font-size: 1.3em; 
+
+    &:hover{
+        background-color: #BBE225;
+    }
+    &::before{
+        content: '<<';
+    }
+    &::after{
+        content: '>>';
+    }
+}
+
+/*-------------------------------------FOOTER-----------------------------*/
+
+.footer{
+    width: 100vw;
+    height: 60px;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 30;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 35px;
+ 
+}
+
+
+.contact{
+    display: flex;
+    gap: 15px;
+}
+
+.contact__socialNetwork{
+    text-decoration: none;
+}
+
+/*-------------------------------------RESPONSIVE-----------------------------*/
+
+@media screen and (min-width:1441px) and (max-width:1980px)  {
+
+    .column-gallery{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+}
+
+
+
+
