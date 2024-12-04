@@ -158,6 +158,17 @@ margin: 0;
     }
 }
 
+/* Colores para modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .form__button{
+        color: rgb(0, 0, 0);
+    }
+  }
 
+  @media (prefers-color-scheme: light) {
+    .form__button{
+        color: rgb(0, 0, 0);
+    }
+  }
 
 
